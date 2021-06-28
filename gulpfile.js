@@ -12,9 +12,10 @@ function style() {
 
 function watch() {
     browserSync.init({
-        server: {
-            baseDir: './'
-        }
+        // You cannot specify both server & proxy options.
+        //server: false,
+        server: { baseDir: './' },
+        //proxy: "dgd.local",
 
     });
     gulp.watch("./src/scss/**/*.scss", style);
