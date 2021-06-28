@@ -4,9 +4,9 @@ const browserSync = require('browser-sync').create();
 
 //compile sass into css
 function style() {
-    return gulp.src("./scss/**/*.scss")
+    return gulp.src("./src/scss/**/*.scss")
         .pipe(sass()).on('error', sass.logError)
-        .pipe(gulp.dest("./css"))
+        .pipe(gulp.dest("./dist/css"))
         .pipe(browserSync.stream());
 }
 
@@ -17,8 +17,8 @@ function watch() {
         }
 
     });
-    gulp.watch("./scss/**/*.scss", style);
-    gulp.watch("./**/*.js", style).on('change', browserSync.reload);
+    gulp.watch("./src/scss/**/*.scss", style);
+    gulp.watch("./**/**/*.js", style).on('change', browserSync.reload);
     gulp.watch("./**/*.html", style).on('change', browserSync.reload);
 }
 
