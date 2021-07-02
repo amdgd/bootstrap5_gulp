@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap5_gulp",
+  "name": "bootstrap5demo",
   "version": "1.0.0",
   "main": "gulpfile.js",
   "scripts": {},
@@ -8,7 +8,11 @@
   "devDependencies": {
     "browser-sync": "^2.27.3",
     "gulp": "^4.0.2",
+    "gulp-cheerio": "^1.0.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.0.0",
+    "gulp-svgmin": "^4.0.1",
+    "gulp-svgstore": "^8.0.0",
     "sass": "^1.35.1"
   },
   "dependencies": {
