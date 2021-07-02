@@ -1,6 +1,6 @@
 {
-  "name": "bootstrap5demo",
-  "version": "1.0.0",
+  "name": "bootstrap5_template",
+  "version": "1.0.1",
   "main": "gulpfile.js",
   "scripts": {},
   "author": "Ankit Maheshwari",
