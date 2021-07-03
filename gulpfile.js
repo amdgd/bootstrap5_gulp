@@ -26,6 +26,7 @@ function watch() {
     gulp.watch("./src/scss/**/*.scss", style);
     gulp.watch("./**/**/*.js", style).on('change', browserSync.reload);
     gulp.watch("./**/*.html", style).on('change', browserSync.reload);
+    gulp.watch("./**/*.php", style).on('change', browserSync.reload);
 }
 
 gulp.task('svgstore', () => {
